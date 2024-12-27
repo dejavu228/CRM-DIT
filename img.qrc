@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/res">
+        <file>image-DIT.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>../imasdasd/ad.png</file>
+        <file>../imasdasd/ad-white.png</file>
+        <file>../imasdasd/bitmap1.bmp</file>
+        <file>../imasdasd/book.png</file>
+        <file>../imasdasd/book-white.png</file>
+        <file>../imasdasd/catalog.png</file>
+        <file>../imasdasd/client-white.png</file>
+        <file>../imasdasd/closeEye.png</file>
+        <file>../imasdasd/deal-white.png</file>
+        <file>../imasdasd/dollar.png</file>
+        <file>../imasdasd/downArrow.png</file>
+        <file>../imasdasd/history.png</file>
+        <file>../imasdasd/history-white.png</file>
+        <file>../imasdasd/laptop.png</file>
+        <file>../imasdasd/logout.png</file>
+        <file>../imasdasd/main.png</file>
+        <file>../imasdasd/openEye.png</file>
+        <file>../imasdasd/settings.png</file>
+        <file>../imasdasd/sklad.png</file>
+        <file>../imasdasd/sklad-white.png</file>
+        <file>../imasdasd/tp-white.png</file>
+        <file>../imasdasd/t-white.png</file>
+        <file>../imasdasd/upArrow.png</file>
+        <file>../imasdasd/vendor.png</file>
+        <file>../imasdasd/vendor-white.png</file>
+        <file>../imasdasd/worker.png</file>
+        <file>../imasdasd/worker-white.png</file>
+    </qresource>
+</RCC>

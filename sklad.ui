@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Sklad</class>
+ <widget class="QMainWindow" name="Sklad">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1089</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>691</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>680</width>
+      <height>480</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableView {
+    background-color: #f9f9f9; /* Цвет фона таблицы */
+    border: 1px solid #d3d3d3; /* Граница вокруг таблицы */
+    gridline-color: #e0e0e0; /* Цвет линий сетки */
+    selection-background-color: #0078d7; /* Цвет выделения строк */
+    selection-color: #ffffff; /* Цвет текста в выделенных строках */
+    font: 12px Arial, sans-serif; /* Шрифт для текста таблицы */
+    color: #000000; /* Черный цвет текста */
+}
+
+QHeaderView::section {
+    background-color: #0078d7; /* Цвет фона заголовков */
+    color: white; /* Цвет текста заголовков */
+    padding: 5px; /* Отступы внутри заголовков */
+    border: 1px solid #d3d3d3; /* Граница заголовков */
+    font-weight: bold; /* Жирный текст */
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+QTableView::item {
+    border: none; /* Без рамок у ячеек */
+    padding: 5px; /* Отступы внутри ячеек */
+    color: #000000; /* Черный цвет текста */
+}
+
+QTableView::item:selected {
+    background-color: #0078d7; /* Цвет фона выделенной строки */
+    color: #ffffff; /* Цвет текста выделенной строки */
+}
+
+QTableView::item:hover {
+    background-color: #d0eaff; /* Цвет фона строки при наведении */
+    color: #000000; /* Черный цвет текста при наведении */
+}
+
+QScrollBar:vertical {
+    background-color: #f0f0f0; /* Цвет фона вертикального скроллбара */
+    width: 10px; /* Ширина полосы прокрутки */
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #0078d7; /* Цвет полосы прокрутки */
+    border-radius: 4px; /* Закругление углов полосы прокрутки */
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: none; /* Без кнопок для прокрутки */
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_id">
+    <property name="geometry">
+     <rect>
+      <x>742</x>
+      <y>80</y>
+      <width>151</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Comfortaa&quot;;
+font: bold;
+color:  rgb(56, 84, 102);
+border:3px solid #DDEBFF;
+border-radius: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_name">
+    <property name="geometry">
+     <rect>
+      <x>742</x>
+      <y>130</y>
+      <width>151</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Comfortaa&quot;;
+font: bold;
+color:  rgb(56, 84, 102);
+border:3px solid #DDEBFF;
+border-radius: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_quantity">
+    <property name="geometry">
+     <rect>
+      <x>742</x>
+      <y>180</y>
+      <width>151</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Comfortaa&quot;;
+font: bold;
+color:  rgb(56, 84, 102);
+border:3px solid #DDEBFF;
+border-radius: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_price">
+    <property name="geometry">
+     <rect>
+      <x>742</x>
+      <y>230</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Comfortaa&quot;;
+font: bold;
+color:  rgb(56, 84, 102);
+border:3px solid #DDEBFF;
+border-radius: 10px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>80</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	font: 12pt &quot;Comfortaa&quot;;
+	font: bold;
+	color:  rgb(56, 84, 102);
+	border: 5px solid #BBD6FF ;
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;</string>
+    </property>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>130</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	font: 12pt &quot;Comfortaa&quot;;
+	font: bold;
+	color:  rgb(56, 84, 102);
+	border: 5px solid #BBD6FF ;
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Название</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>180</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	font: 12pt &quot;Comfortaa&quot;;
+	font: bold;
+	color:  rgb(56, 84, 102);
+	border: 5px solid #BBD6FF ;
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Количество</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>230</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	font: 12pt &quot;Comfortaa&quot;;
+	font: bold;
+	color:  rgb(56, 84, 102);
+	border: 5px solid #BBD6FF ;
+	border-top: transparent;
+	border-left: transparent;
+	border-right: transparent;</string>
+    </property>
+    <property name="text">
+     <string>Цена</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_add">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>290</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Comfortaa&quot;;
+font: bold;
+color:  rgb(56, 84, 102);
+border:3px solid #DDEBFF;
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Добавить</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>340</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;Comfortaa&quot;;
+font: bold;
+color:  rgb(56, 84, 102);
+border:3px solid #DDEBFF;
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string>Удалить</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1089</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
